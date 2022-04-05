@@ -211,7 +211,7 @@ Make sure that it will be matched by `emacs-everywhere-file-patterns'."
                      (concat "--socket-name="
                              (shell-quote-argument
                               (expand-file-name server-name server-socket-dir)))))
-                 "-c" "-F"
+                 "-t" "-F"
                  (prin1-to-string
                   (cons (cons 'emacs-everywhere-app app-info)
                         emacs-everywhere-frame-parameters))
